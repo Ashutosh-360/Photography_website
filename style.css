@@ -1,0 +1,523 @@
+/* ===================================General============================ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+
+:root {
+    --black: #000;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--black);
+    height: 2000px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: 2px;
+}
+
+
+
+/* ==============================================================Navigation Area================================================= */
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/cover.jpeg);
+    background-size: cover;
+    position: relative;
+}
+
+header img {
+    width: 130px;
+}
+
+header {
+    display: flex;
+    padding: 2rem 12rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 6rem;
+
+}
+
+.navigation {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-links a button {
+    width: 7.7rem;
+    padding: 10px;
+    background-color: var(--white);
+    color: black;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 0px 5px 20px grey;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.25s ease;
+}
+
+.nav-links a button:hover {
+    opacity: 0.8;
+
+}
+
+.main-content {
+    text-align: center;
+    padding: 0px 350px;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+    color: var(--white);
+}
+
+.main-content p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: silver;
+}
+
+.main-content h1 {
+    font-size: 4rem;
+}
+
+.main-content h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* ====================================Services=========================== */
+.services-heading {
+    text-align: center;
+}
+
+.services-heading h2 {
+    color: var(--white);
+    margin-top: 6rem;
+    font-weight: 550;
+    font-size: 3.5rem;
+}
+
+.services-heading h3 {
+    color: silver;
+    padding: 0.7rem;
+    font-weight: 400;
+    font-size: 1.9rem;
+    margin-bottom: 1.2rem;
+}
+
+.card-wrapper {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: center;
+}
+
+.card {
+    width: 50%;
+    height: auto;
+    text-align: left;
+    color: var(--white);
+    padding: 1rem;
+    position: relative;
+
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    padding: 3.5rem 2.5rem;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.card-content:hover {
+    opacity: 1;
+}
+
+.card-content p {
+    color: silver;
+    font-size: 1.1rem;
+    margin-top: 1.3rem;
+
+}
+
+.card-content h4 {
+    font-size: 1.3rem;
+}
+
+.card-content button {
+    width: 12rem;
+    height: 3.5rem;
+    margin-top: 1.3rem;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+
+}
+
+.card-content h4 {
+    color: var(--white);
+}
+
+.card-content p {
+    color: var(--white);
+}
+
+
+/* ========================================Landscape Image=================== */
+.landscape-image {
+    width: 100%;
+    height: 90vh;
+}
+
+.landscape-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==========================================================================The gear cage================================ */
+
+.the-gear-cage {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.gear-cage {
+    width: 50%;
+    padding: 2.8rem;
+}
+
+.gear-cage button {
+    width: 12rem;
+    height: 3.5rem;
+    margin-top: 1.3rem;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.gear-image {
+    width: 50%;
+    height: 100%;
+}
+
+.gear-cage h3 {
+    font-size: 1.2rem;
+    color: var(--white);
+    font-weight: 600;
+    margin-bottom: 1%;
+
+}
+
+.gear-cage h4 {
+    color: silver;
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 1%;
+}
+
+.gear-cage p {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-bottom: 3%;
+}
+
+.gear-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==========================================================================landscape image 2================================ */
+
+
+
+/* =========================================================================Our clients section================================ */
+
+section.clients {
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+}
+
+.client-heading {
+    width: 100%;
+}
+
+.client-heading h2 {
+    font-size: 3rem;
+    color: var(--white);
+    font-weight: 600;
+    margin-top: 3.5rem;
+}
+
+.client-heading h3 {
+    color: silver;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: .5rem;
+}
+
+.client-names {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.client-names img {
+    width: 11rem;
+}
+
+/* =========================================================== Get in touch section============================== */
+
+.get-in-touch {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 4rem;
+}
+
+.get-in-touch h3 {
+    font-size: 3.5rem;
+    color: var(--white);
+    font-weight: 500;
+    margin-top: 5rem;
+    margin: 0 15rem;
+}
+
+.get-in-touch button {
+    width: 12rem;
+    height: 3.5rem;
+    margin-top: 1.3rem;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.get-in-touch h4 {
+    color: silver;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: .5rem;
+}
+
+/* =============================================================Another head portion ========================================*/
+
+
+.another-head {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.9rem;
+    border-bottom: 2px solid grey;
+}
+
+.another-head .aperture-logo {
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1.3rem;
+}
+
+.another-head .aperture-logo img {
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+.another-head .aperture-logo p {
+    color: silver;
+    font-size: 1.2rem;
+}
+
+.another-head .menu {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.2rem;
+}
+
+.another-head .menu .business-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.another-head .menu .pages {
+    display: flex;
+    flex-direction: column;
+}
+
+.another-head .menu h3 {
+    color: silver;
+    font-size: 1.3rem;
+    font-weight: 550;
+}
+
+.another-head .menu a {
+    padding: 0.6rem 0;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+
+/* ==============================================Footer section =================================================== */
+
+
+.footer 
+{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    padding: 5rem 2rem;
+    border-bottom: 2px solid grey;
+    align-items: center;
+}
+
+.newsletter-left 
+{
+    width: 50%;
+    height: auto;
+}
+
+.newsletter-right 
+{
+    width: 50%;
+    height: auto;
+    text-align: right;
+    margin-right: 4rem;
+    align-items: center;
+}
+.newsletter-right form input
+{
+    text-decoration: none;
+    border: none;
+    width: 34rem;
+    height: 4.5rem;
+    border-radius: 25px;
+    padding: 2rem;
+    font-size: 1rem;
+    position: relative;
+}
+.newsletter-right form button
+{
+    width: 6.5rem;
+    height: 3rem;
+    border: none;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 15px;
+    align-items: center;
+    font-size: 1.0rem;
+    font-weight: 400;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+    position: absolute;
+    right: 7rem;
+    transform: translateY(0.8rem);
+    transition: all 0.25s ease;
+}
+
+.newsletter-left h3 {
+    color: var(--white);
+}
+
+.newsletter-left p {
+    color: silver;
+}
+
+/* ===========================================Copyright section ================================================= */
+
+.copyright 
+{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.copyright-logo 
+{
+    width: 50%;
+    padding: 0 2rem;
+}
+
+.copyright-logo h5 
+{
+    color: silver;
+    font-size: 1.2rem;
+}
+
+.social-links 
+{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+}
+
+.social-links i
+{
+    color: white;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+button:hover
+{
+    transform: translateY(-0.3rem);
+    opacity: 0.75;
+}
